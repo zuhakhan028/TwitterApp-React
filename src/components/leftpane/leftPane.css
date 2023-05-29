@@ -1,0 +1,79 @@
+.LeftPane {
+    width: 505px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    height:100vh;
+    position: sticky;
+    top:0;
+
+   
+}
+
+@media screen and (max-width:1500px){
+    .LeftPane{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:1316px){
+    .LeftPane{
+       width: 357px;
+    }
+ }
+
+ 
+ @media screen and (max-width:1294px){
+    .LeftPane{
+        width: 300px;
+     }
+ }
+ 
+ @media screen and (max-width:1260px){
+    .LeftPane{
+        width: 300px;
+     }
+ }
+ 
+ @media screen and (max-width:1165px){
+    .LeftPane{
+        width: 250px;
+     }
+ }
+ 
+
+ 
+ @media screen and (max-width:1120px){
+    .LeftPane{
+        width: 200px;
+     }
+ }
+ 
+ @media screen and (max-width:1120px){
+    .LeftPane{
+        width: 420px;
+     }
+ }
+ 
+ @media screen and (max-width:1088px){
+    .LeftPane{
+        width: 350px;
+     }
+ }
+
+ @media screen and (max-width:1048px){
+    .LeftPane{
+        width: 250px;
+     }
+ }
+
+ 
+ @media screen and (max-width:900px){
+   
+    .LeftPane{
+      display: none;
+     }
+ }
+
+

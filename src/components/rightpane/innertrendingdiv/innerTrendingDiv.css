@@ -1,0 +1,5 @@
+.innerTrendingDiv{
+width: 350px;
+border-radius: 25px;
+background-color: var(--twitter-background-gray);
+}

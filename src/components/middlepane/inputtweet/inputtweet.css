@@ -1,0 +1,68 @@
+.inputTweetDiv{
+    border-top:1px solid var(--border-gray);
+    border-bottom:1px solid var(--border-gray) ;
+    padding-top: 3px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 119px;
+}
+.inputTweet{
+    width: 454px;
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.inputTweet:focus{
+   outline: none;
+}
+
+.inputUserImg{
+    width: 45px;
+    border-radius: 50%;
+}
+.InputTweetInnerDiv{
+    display: flex;
+
+}
+.middleTweetButton{
+    margin-left: 485px;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width:1500px){
+    .inputTweet{
+       width: 395px;
+    }
+    .middleTweetButton{
+        margin-left: 375px;
+        margin-bottom: 5px;
+    }
+    
+ }
+
+ @media screen and (max-width:1120px){
+   
+    .middleTweetButton{
+        margin-left: 570px;
+        margin-bottom: 5px;
+    }
+ }
+
+ @media screen and (max-width:900px){
+   
+    .middleTweetButton{
+        margin-left: 380px;
+        margin-bottom: 5px;
+    }
+
+    
+ }
+ 
+ 

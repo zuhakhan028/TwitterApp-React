@@ -1,0 +1,21 @@
+
+.home-pane-icon{
+    height: 20.25px;
+    width: 22.202383041381836px;
+    border-radius: 0px;
+    margin-right: 20.9px;
+    fill: #D9D9D9;   
+}
+.Home-span{
+    font-size: 19px;
+    font-weight: 700;
+    color:
+    #D9D9D9
+
+}
+.icon-div{
+    margin-bottom:35px ;
+}
+.icon-div:hover{
+    cursor: pointer;
+}

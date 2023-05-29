@@ -1,0 +1,42 @@
+.middlePane{
+   background-color: black;
+   width: 599px;
+   height: 100%;
+   border: 1px solid  #2F3336;
+  
+}
+.middleSuspense{
+   background-color: black;
+   color:white;
+   width: 599px;
+   height: 100%;
+   border: 1px solid  #2F3336;
+}
+
+/* @media screen and (max-width:1260px){
+   .middlePane{
+      width: 500px;
+   }
+} */
+
+@media screen and (max-width:1120px){
+   .middlePane{
+      width: 700px;
+    }
+}
+ 
+@media screen and (max-width:1119px){
+   
+   .middlePane{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width:900px){
+   
+   .middlePane{
+      width: 99%;
+    }
+}
+
+

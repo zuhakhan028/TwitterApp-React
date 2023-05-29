@@ -1,0 +1,63 @@
+.InnerLeftPane {
+   margin-top: 19px;
+   padding-left: 25px;
+   width:250px;
+   margin-left: 205px;
+  }
+  
+
+   
+@media screen and (max-width:1500px){
+   .InnerLeftPane{
+      margin-left: 150px;
+   }
+}
+
+   
+@media screen and (max-width:1465px){
+   .InnerLeftPane{
+      margin-left: 50px;
+   }
+}
+
+@media screen and (max-width:1294px){
+   .InnerLeftPane{
+      margin-left: 20px;
+   }
+}
+
+@media screen and (max-width:1260px){
+   .InnerLeftPane{
+      margin-left: 20px;
+   }
+}
+
+@media screen and (max-width:1165px){
+   .InnerLeftPane{
+      margin-left: 0px;
+   }
+}
+
+@media screen and (max-width:1119px){
+   .InnerLeftPane{
+      margin-left: 0px;
+   }
+}
+
+
+@media screen and (max-width:1120px){
+   .InnerLeftPane{
+      margin-left: 150px;
+   }
+}
+
+@media screen and (max-width:1098px){
+   .InnerLeftPane{
+      margin-left: 0
+   }
+}
+@media screen and (max-width:1048px){
+   .InnerLeftPane{
+      margin-left: 0
+   }
+}

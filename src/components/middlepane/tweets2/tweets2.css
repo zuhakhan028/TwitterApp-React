@@ -1,0 +1,89 @@
+.tweets{
+    color: white;
+}
+
+.tweetImg{
+    width: 45px;
+    border-radius: 50%;
+}
+.retweet{
+    border-top: 1px solid var(--border-gray);
+    border-bottom: 1px solid var(--border-gray);
+    padding-bottom: 26px;
+}
+.retweetDivImg{
+    width: 42px;
+    border-radius: 50%;
+    margin-right: 9px;
+   
+}
+
+.retweetDivImg2{
+   border-radius: 50%;
+   width: 42px;
+   height: 45px;
+   margin-right: 9px;
+   
+}
+.userDetailsMiddlePane{
+    display: flex;
+    flex-direction: row;
+   
+   
+}
+.userNameMiddlePane{
+    font-size: 12px;
+    font-weight: 700;
+}
+.userIdMiddlePane{
+    font-size: 12px;
+    font-weight: 500;
+    color: #6E767D;
+    margin-left: 2px;
+   
+}
+.userDetailDivMiddlePane{
+    padding-top: 22px;
+    padding-left: 12px;
+    display: flex;
+}
+.tweetTextArea{
+    font-size: 14px;
+    font-weight: 400;
+}
+.metrics{
+    padding-left: 40px;
+    display: flex;
+    margin-top: 20px;
+}
+.verical_hr{
+    border:1px solid var(--border-gray);
+    width:70px;
+    margin-left: 0px;
+    transform: rotate(90deg);
+    margin-bottom: 14px;
+    margin-top: 0px;
+ 
+}
+
+.subTweetDiv{
+    border-bottom: 1px solid var(--border-gray);
+    padding-bottom: 15px;
+}
+.replyingTo{
+    font-size: 14px;
+    font-weight: 400;
+    color:var(--twitter-gray);
+    margin-bottom:3px;
+    margin-left:0
+}
+.replyingBlue{
+    font-size: 14px;
+    font-weight: 400;
+    color:var(--twitter-light-blue)
+}
+.newTweet{
+    border-bottom: 1px solid var(--border-gray);
+    padding-bottom: 15px;
+
+}

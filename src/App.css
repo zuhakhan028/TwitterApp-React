@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+:root{
+  --twitter-blue: #1D9BF0;
+  --twitter-light-blue:#4C9EEB;
+  --border-gray: #2F3336;
+  --twitter-gray: #6E767D;
+  --twitter-background-gray:#202327;
+}
+
+.suspensediv{
+  width: 100vw;
+  height: 100vh;
+}

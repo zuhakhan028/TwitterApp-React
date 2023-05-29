@@ -1,0 +1,13 @@
+.shareIcon{
+    width: 15px;
+    margin-right: 3px
+}
+.shareCount{
+ font-size: 12px;
+ color:var(--twitter-gray)
+}
+.shareDiv{
+    display: flex;
+    align-items: center;
+    margin-left: 53px;
+}

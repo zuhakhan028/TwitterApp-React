@@ -1,0 +1,40 @@
+.WhoToFollow{
+    margin-top: 12px;
+    padding: 16px;
+    width: 340px;
+    background-color: var(--twitter-background-gray);
+    border-radius: 20px;
+}
+.title{
+    font:SF Pro Display;
+    font-size: 19px;
+    font-weight: 700;
+}
+.trending{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--twitter-gray);
+}
+.text{
+    font-size: 15px;
+    font-weight: 700;
+}
+.eachTrend{
+    margin-top: 25px;
+}
+.Tags{
+    font-size: 13px;
+    font-weight: 600;
+    color:var(--twitter-blue)
+}
+.showmore{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color:var(--twitter-blue)
+}
+@media screen and (max-width:1465px){
+    .WhoToFollow{
+        width: 300px;
+    }
+ }

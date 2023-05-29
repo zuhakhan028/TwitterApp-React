@@ -1,0 +1,13 @@
+.commentIcon{
+    width: 15px;
+    margin-right: 3px
+}
+.commentCount{
+ font-size: 12px;
+ color:var(--twitter-gray)
+}
+.commentDiv{
+    display: flex;
+    align-items: center;
+    margin-left: 23px;
+}

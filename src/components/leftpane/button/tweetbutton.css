@@ -1,0 +1,45 @@
+.tweetButton {
+    width: 225px;
+    height: 52px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--twitter-blue);
+}
+
+.tweetAnchorTag {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+}
+
+.secondarybutton {
+    display: flex;
+    width: 79px;
+    height: 36px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--twitter-blue);
+}
+
+.secondarytweetAnchorTag {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+@media screen and (max-width:1165px){
+    .tweetButton {
+        width: 200px;}
+ }
+ 
+ @media screen and (max-width:1115px){
+    .tweetButton {
+        width: 150px;}
+ 
+ }
+

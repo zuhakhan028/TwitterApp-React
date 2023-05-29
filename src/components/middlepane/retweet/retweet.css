@@ -1,0 +1,14 @@
+.retweetIcon{
+    width: 15px;
+    margin-right: 3px;
+}
+.retweetCount{
+ font-size: 12px;
+ color:var(--twitter-gray)
+}
+.retweetDiv{
+    display: flex;
+    align-items: center;
+    margin-left: 53px;
+}
+

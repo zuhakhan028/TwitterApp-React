@@ -1,0 +1,10 @@
+.innerRightPane{
+    margin-left: 30px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width:1465px){
+    .innerRightPane{
+        margin-left: 10px;
+    }
+ }

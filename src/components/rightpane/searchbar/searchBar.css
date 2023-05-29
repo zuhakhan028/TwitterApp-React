@@ -1,0 +1,34 @@
+.searchBar{
+    color:white;
+}
+.searchBartDiv{
+    display: flex;
+    width: 350px;
+    padding: 13.5px;
+   background-color: var(--twitter-background-gray);
+   border-radius: 40px;
+}
+.inputSearch{
+    border: none;
+    background-color: var(--twitter-background-gray);
+    margin-left: 25px;
+}
+.inputSearch:focus{
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+.inputSearch::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+}
+.searchIcon{
+    width: 15px;
+}
+
+ @media screen and (max-width:1465px){
+    .searchBartDiv{
+        width: 300px;
+    }
+ }
