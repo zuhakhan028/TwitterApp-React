@@ -10,16 +10,26 @@ interface Props {
     loggedInUser: UserData | undefined
     tweetButton: ButtonData | undefined
     readInput?:string
-    tweetThreads: TweetData[][] | undefined
-    onkeyupTweet:any
-    onClickTweet:any
-    userTweet:string
-    setTweet:any
-   
+ 
+    onClickTweet:(tweet:string)=>void  
  
 }
 
 function InputTweet(props: Props) {
+
+    
+    const [userTweet, setTweet]:any = useState()
+  
+    function onkeyupTweet(event: any) {
+        setTweet(event.target.value)
+       
+    }
+   
+    function onSubmitClick() {
+        props.onClickTweet(userTweet)
+        setTweet("")
+       
+    }
  
 
     let isPrimary = false;
@@ -27,11 +37,11 @@ function InputTweet(props: Props) {
         <div className="inputTweetDiv">
             <div className="InputTweetInnerDiv">
                 <img className="inputUserImg" src={`${props.loggedInUser?.imageData?.url}`}></img>
-                <input className="inputTweet" type="text" placeholder="What's Happening?!" onKeyUp={props.onkeyupTweet}  onChange={()=>{props.setTweet(props.userTweet )}}/>
+                <input className="inputTweet" type="text" placeholder="What's Happening?!" onChange={onkeyupTweet}  value={userTweet}/>
                 
             </div>
-            <div className="middleTweetButton" onClick={props.onkeyupTweet}>
-                <TweetButton tweetButtonData={props?.tweetButton} isPrimary={isPrimary} userTweet={props.onClickTweet} />
+            <div className="middleTweetButton">
+                <TweetButton tweetButtonData={props?.tweetButton} isPrimary={isPrimary} onClickTweet={onSubmitClick} />
             </div>
 
         </div>

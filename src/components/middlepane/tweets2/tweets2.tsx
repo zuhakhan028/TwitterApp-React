@@ -25,11 +25,10 @@ function Tweets2(props: Props) {
                 <div className="maintweet">{
                     threads&&threads.map((user, index) => {
                         if (user.length > 1) {
-                            {console.log(user)}
                                 return (
                                     
                                     <div className="subTweetDiv" >
-                                        <div className="userDetailDivMiddlePane" key={`${user[0].id}`}>
+                                        <div className="userDetailDivMiddlePane">
                                             <img className="retweetDivImg" src={user[0].user.imageData.url}></img>
                                             <div>
                                                 <div className="userDetailsMiddlePane">
@@ -51,7 +50,7 @@ function Tweets2(props: Props) {
                                             <Share share={user[0]?.views} />
                                         </div>
                                         <hr className="verical_hr"></hr>                                                                                    
-                                        <div className="userDetailDivMiddlePane" key={`${user[1].id}`}>
+                                        <div className="userDetailDivMiddlePane">
                                             <img className="retweetDivImg2" src={user[1]?.user?.imageData?.url}></img>
                                             <div>
                                                 <div className="userDetailsMiddlePane">
@@ -79,7 +78,7 @@ function Tweets2(props: Props) {
                                 }
                         if(user.length<2) {
                             return (
-                                <div className="newTweet" key={`${user[1].id}`}>
+                                <div className="newTweet">
                                     <div className="userDetailDivMiddlePane">
                                             <img className="retweetDivImg" src={user[0]?.user?.imageData?.url}></img>
                                             <div>

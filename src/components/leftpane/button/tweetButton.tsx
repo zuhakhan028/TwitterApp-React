@@ -7,27 +7,19 @@ import Tweets from "../../middlepane/tweets/tweets";
 interface Props{
     tweetButtonData:ButtonData|undefined
     isPrimary:boolean;
-    userTweet?:any;
+    onClickTweet?:()=>void
  
 
 }
 function TweetButton(props:Props){
   
-  let newTweet:any=props.userTweet
-  let [tweet,setTweet]=useState()
-  function readInput(event:any){
-    setTweet(newTweet)
-    event.preventDefault()
-  }
-
-
 
     return (
         <div>
-            <div className={props?.isPrimary?`tweetButton`:`secondarybutton`} onClick={readInput}>
-                <a className={props?.isPrimary?`tweetAnchorTag`:`secondarytweetAnchorTag`}href={`${props?.tweetButtonData?.actionUrl}`} >
+            <div className={props?.isPrimary?`tweetButton`:`secondarybutton`} onClick={props.onClickTweet}>
+                <div className={props?.isPrimary?`tweetAnchorTag`:`secondarytweetAnchorTag`} >
                       {props?.tweetButtonData?.buttonText}
-                </a>
+                </div>
             </div>
         </div>
     )
