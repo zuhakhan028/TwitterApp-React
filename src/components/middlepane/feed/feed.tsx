@@ -9,7 +9,13 @@ function Feed(props:Props){
    
     return(
         <div className="feed">
-           <ForYou navigationtabs={navigationtabs?.[0]}/>
+            <div className="border-blue">
+              
+                <ForYou navigationtabs={navigationtabs?.[0]} />
+             
+          
+            </div>
+          
            <ForYou navigationtabs={navigationtabs?.[1]}/>
         </div>
     )

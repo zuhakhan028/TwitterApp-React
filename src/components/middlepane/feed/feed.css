@@ -1,6 +1,7 @@
 .feed{
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 .buttonText{
     color:white;
@@ -11,5 +12,17 @@
     margin-bottom: 14px;
     margin-top: 16px;
    
+}
+.underline{
+    text-decoration: underline 4px solid var(--twitter-blue);
+    color:white;
+    width:299px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    margin-top: 16px;
+    text-underline-offset: 13px;
+    
 }
 

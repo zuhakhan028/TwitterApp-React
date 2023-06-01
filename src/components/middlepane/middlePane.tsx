@@ -22,39 +22,29 @@ function MiddlePane(props: Props) {
     const headerData: HeaderData | undefined = props.data?.headerData;
     const loggedInUser: UserData | undefined = props?.loggedInUser
     const tweetThreads: TweetData[][] | undefined = props?.data?.tweetThreads
-    console.log(tweetThreads);
    
-
-    const [userTweet, setTweet]:any = useState()
-    const [updateTweet,setUpdateTweet]:any=useState()
+    const [updatedTweetThreads,setUpdatedTweetThreads]:any=useState(tweetThreads)
+   
+function onClickTweet(tweet:string){
+    updatedTweetThreads.unshift(NewTweet(tweet))
   
-    function onkeyupTweet(event: any) {
-        setTweet(event.target.value)
-    }
-   
-    function onSubmitClick() {
-        if(tweetThreads !=undefined && userTweet){
-            setUpdateTweet(tweetThreads.unshift(NewTweet(userTweet)))
-            setTweet("")
-            console.log(updateTweet);
-        }
-       
-    }
+        setUpdatedTweetThreads([...updatedTweetThreads])   
+}
     
-    
+
   
 
     return (
-        <Suspense fallback={<div className="middleSuspense">Loading...</div>}>
+    
         <div className="middlePane">
             
             <MiddlePaneHead headerData={headerData} />
             <Feed headerData={headerData} />
-            <InputTweet loggedInUser={loggedInUser} tweetButton={props?.tweetButton} tweetThreads={tweetThreads} onkeyupTweet={onkeyupTweet} onClickTweet={onSubmitClick} userTweet={userTweet} setTweet={setTweet} />
-            <Tweets2 tweetThreads={tweetThreads} />
+            <InputTweet loggedInUser={loggedInUser} tweetButton={props?.tweetButton}  onClickTweet={onClickTweet}/>
+            <Tweets2 tweetThreads={updatedTweetThreads} />
            
         </div>
-        </Suspense>
+      
     )
 }
 
